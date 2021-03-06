@@ -10,8 +10,6 @@
   padding-inline-start: 0;
   @media screen and (min-width: 480px) {
     flex-wrap: wrap;
-
-    flex-basis: calc((100% - 60px) / 2);
   }
 
   &-page {
@@ -35,14 +33,25 @@
     outline: none;
 
     @include animate(border);
-
     @media screen and (min-width: $mobile) {
-      margin-top: 30px;
+      margin-top: 0;
+      height: 90px;
+      width: 210px;
     }
   }
 
   &__item {
     margin-right: 30px;
+    @media screen and (min-width: $mobile) {
+      margin-top: 30px;
+      flex-basis: calc((100% - 60px) / 2);
+    }
+  }
+
+  .ourclients__item:nth-child(2n) {
+    @media screen and (min-width: $mobile) {
+      margin-right: 0;
+    }
   }
 
   &__item:last-child {

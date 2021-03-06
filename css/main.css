@@ -750,6 +750,13 @@ textarea {
   padding-bottom: 94px;
 }
 
+@media screen and (min-width: 480px) {
+  .whywe-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .whatwedo-page__title, .ourteam-page__title, .ourclients-page__title {
   color: #212121;
   font-weight: 700;
@@ -785,6 +792,12 @@ textarea {
 
 .whatwedo-page {
   padding-bottom: 94px;
+}
+
+@media screen and (min-width: 480px) {
+  .whatwedo-page {
+    padding: 0;
+  }
 }
 
 .whatwedo__item + .whatwedo__item {
@@ -1003,8 +1016,6 @@ textarea {
   .ourclients {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
   }
 }
 
@@ -1046,12 +1057,28 @@ textarea {
 
 @media screen and (min-width: 480px) {
   .ourclients__link {
-    margin-top: 30px;
+    margin-top: 0;
+    height: 90px;
+    width: 210px;
   }
 }
 
 .ourclients__item {
   margin-right: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .ourclients__item {
+    margin-top: 30px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .ourclients .ourclients__item:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
 .ourclients__item:last-child {
@@ -1098,6 +1125,13 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (min-width: 480px) {
+  .footer {
+    display: block;
+    text-align: center;
+  }
 }
 
 .footer-page {
@@ -1148,6 +1182,14 @@ textarea {
   margin-left: 70px;
 }
 
+@media screen and (min-width: 480px) {
+  .join-us-box {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 0;
+  }
+}
+
 .join-us__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1181,6 +1223,12 @@ textarea {
   margin-left: 93px;
 }
 
+@media screen and (min-width: 480px) {
+  .sign-in-box {
+    margin-left: 0;
+  }
+}
+
 .sign-in {
   margin-top: 20px;
 }
@@ -1200,6 +1248,12 @@ textarea {
   margin-left: 12px;
   border: none;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .sign-in__btn {
+    margin-top: 20px;
+  }
 }
 
 .sign-in__btn::after {
@@ -1231,6 +1285,17 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (min-width: 480px) {
+  .join-us {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .join-us__icon {
