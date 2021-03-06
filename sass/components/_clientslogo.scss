@@ -1,0 +1,97 @@
+@import "../utils/placeholders";
+@import "../utils/mixins";
+
+.ourclients-page__title {
+  @extend %page__title;
+}
+
+.ourclients {
+  display: flex;
+  padding-inline-start: 0;
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+
+    flex-basis: calc((100% - 60px) / 2);
+  }
+
+  &-page {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    @media screen and (min-width: $mobile) {
+      padding-bottom: 60px;
+      padding-top: 60px;
+    }
+  }
+
+  &__link {
+    margin-top: 50px;
+    height: 90px;
+    width: 170px;
+
+    @include centeredFlex(flex);
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    outline: none;
+
+    @include animate(border);
+
+    @media screen and (min-width: $mobile) {
+      margin-top: 30px;
+    }
+  }
+
+  &__item {
+    margin-right: 30px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__logo1,
+  &__logo2,
+  &__logo3,
+  &__logo4,
+  &__logo5,
+  &__logo6 {
+    fill: #afb1b8;
+
+    @include animate(fill);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    border: 1px solid $accentColor;
+  }
+
+  &__link:hover .ourclients__logo1,
+  &__link:focus .ourclients__logo1,
+  &__link:hover .ourclients__logo2,
+  &__link:focus .ourclients__logo2,
+  &__link:hover .ourclients__logo3,
+  &__link:focus .ourclients__logo3,
+  &__link:hover .ourclients__logo4,
+  &__link:focus .ourclients__logo4,
+  &__link:hover .ourclients__logo5,
+  &__link:focus .ourclients__logo5,
+  &__link:hover .ourclients__logo6,
+  &__link:focus .ourclients__logo6 {
+    fill: $accentColor;
+  }
+
+  &__logo1:hover,
+  &__logo2:hover,
+  &__logo3:hover,
+  &__logo4:hover,
+  &__logo5:hover,
+  &__logo6:hover,
+  &__logo1:focus,
+  &__logo2:focus,
+  &__logo3:focus,
+  &__logo4:focus,
+  &__logo5:focus,
+  &__logo6:focus {
+    fill: $accentColor;
+  }
+}

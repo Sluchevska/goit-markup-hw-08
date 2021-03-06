@@ -1,0 +1,140 @@
+@import "../utils/placeholders";
+@import "../utils/mixins";
+
+.ourteam-page__title {
+  @extend %page__title;
+}
+
+.ourteam {
+  margin-top: 50px;
+  padding-inline-start: 0;
+
+  display: flex;
+  @media screen and (min-width: 480px) {
+    display: block;
+    margin-top: 30px;
+  }
+
+  &__item {
+    margin-right: 30px;
+
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: $mobile) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &-page {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #f5f4fa;
+
+    @media screen and (min-width: $mobile) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+
+  &__name {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+
+    color: $primaryColor;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+
+  &__position {
+    text-align: center;
+
+    color: $secondaryColor;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+}
+
+.ourteam__item:last-child {
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 0;
+  }
+}
+
+.media-box {
+  display: flex;
+  padding-inline-start: 0;
+
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 24px;
+  }
+
+  &__item {
+    margin-right: 10px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__insta-icon,
+  &__twit-icon,
+  &__facebook-icon,
+  &__linkd-icon {
+    fill: #afb1b8;
+    width: 20px;
+    height: 20px;
+  }
+
+  &__link {
+    @include centeredFlex(flex);
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    @include animate(background-color);
+    @include animate(color);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $heroColor;
+
+    background-color: $accentColor;
+  }
+
+  &__insta-icon,
+  &__twit-icon,
+  &__linkd-icon,
+  &__facebook-icon {
+    @include animate(fill);
+  }
+
+  &__link:hover &__twit-icon,
+  &__link:focus &__twit-icon,
+  &__link:hover &__insta-icon,
+  &__link:focus &__insta-icon,
+  &__link:hover &__facebook-icon,
+  &__link:focus &__facebook-icon,
+  &__link:hover &__linkd-icon,
+  &__link:focus &__linkd-icon {
+    fill: currentColor;
+  }
+}

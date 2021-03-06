@@ -1,0 +1,97 @@
+@import "../utils/mixins";
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  display: block;
+}
+
+.projects {
+  padding-inline-start: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  padding-bottom: 94px;
+
+  &__item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+  }
+
+  &__thumb {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 370px;
+    height: 294px;
+    background-color: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+    transform: translateY(100%);
+
+    @include animate(transform);
+  }
+
+  &__link:hover &-overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &-overlay__text {
+    padding: 63px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+
+    letter-spacing: 0.03em;
+    color: $heroColor;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    outline: none;
+
+    @include animate(box-shadow);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    box-shadow: 0 0 10px $secondaryColor;
+  }
+}
+
+.project-box {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+
+  display: block;
+
+  border: 1px solid #eeeeee;
+
+  &__title {
+    color: $primaryColor;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+
+  &__text {
+    color: $secondaryColor;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+  }
+}

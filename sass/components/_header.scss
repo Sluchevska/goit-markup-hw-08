@@ -1,0 +1,214 @@
+@import "../utils/mixins";
+
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.main-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  @media screen and (min-width: 480px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  &__logo-firstpart {
+    color: $accentColor;
+  }
+
+  &__logo-secondpart {
+    color: $primaryColor;
+  }
+
+  &__full-logo {
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    @media screen and (min-width: 480px) {
+      font-size: 24px;
+      line-height: 1.17;
+    }
+  }
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+  padding-inline-start: 0;
+
+  &__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $primaryColor;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+
+  &__link--current:hover,
+  &__link--current:focus {
+    color: $accentColor;
+  }
+
+  &__link--current {
+    position: relative;
+    @include animate(color);
+    color: $accentColor;
+  }
+
+  &__link--current::after {
+    position: absolute;
+    top: 76px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+
+    background-color: #2196f3;
+    border-radius: 2px;
+
+    opacity: 1;
+  }
+
+  &__item {
+    margin-right: 50px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__adjective {
+    @include animate(color);
+  }
+
+  &__adjective:hover,
+  &__adjective:focus {
+    color: $accentColor;
+  }
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+
+  &__item + &__item {
+    margin-left: 30px;
+  }
+
+  &__link {
+    color: $secondaryColor;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+
+  &__envelope-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+
+    fill: #757575;
+
+    @include animate(color);
+  }
+
+  &__smartphone-icon {
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+
+    fill: #757575;
+
+    @include animate(color);
+  }
+
+  &__phone,
+  &__email {
+    display: flex;
+
+    align-items: center;
+
+    @include animate(color);
+  }
+
+  &__email:hover,
+  &__email:focus {
+    color: $accentColor;
+  }
+
+  &__email:hover .auth-nav__envelope-icon,
+  &__email:focus .auth-nav__envelope-icon {
+    fill: currentColor;
+  }
+
+  &__phone:hover,
+  &__phone:focus {
+    color: $accentColor;
+  }
+
+  &__phone:hover &__smartphone-icon,
+  &__phone:focus &__smartphone-icon {
+    fill: currentColor;
+  }
+
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+}
+
+.menu-button {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-button .icon-close24 {
+  display: none;
+}
+
+.menu-button.is-open .icon-close24 {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu24 {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 796px;
+  padding: 48px 40px;
+  background-color: yellowgreen;
+
+  &.is-open {
+    display: block;
+  }
+}
