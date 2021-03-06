@@ -1,11 +1,20 @@
 .hero {
-  padding-top: 200px;
   margin-right: auto;
   margin-left: auto;
   color: $heroColor;
   text-align: center;
   @media screen and (min-width: 480px) {
+    width: 480px;
     padding-top: 118px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 200px;
+    width: 1200px;
   }
 
   &--overlay {
@@ -21,26 +30,30 @@
 
     background-repeat: no-repeat;
     background-position: center;
+
     // @media screen and (min-width: 480px) {
     //   max-width: 480px;
     // }
   }
 
   &__text {
-    width: 696px;
-
     margin-right: auto;
     margin-left: auto;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+
     text-transform: uppercase;
     letter-spacing: 0.06em;
     @media screen and (min-width: 480px) {
       font-size: 26px;
       line-height: 1.615;
       width: 360px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
     }
   }
 }

@@ -93,7 +93,8 @@
     opacity: 1;
     @media screen and( min-width:$tablet) {
       position: absolute;
-      top: 28px;
+      // top: 28px;
+      margin-top: 32px;
     }
     @media screen and( min-width:$desktop) {
       top: 76px;
@@ -129,8 +130,16 @@
       margin-left: auto;
     }
 
+    &__item:first-child {
+      @media screen and (min-width: $tablet) {
+        margin-bottom: 10px;
+      }
+    }
+
     &__item + &__item {
-      margin-left: 30px;
+      @media screen and (min-width: $desktop) {
+        margin-left: 30px;
+      }
     }
 
     &__link {
@@ -143,23 +152,39 @@
     }
 
     &__envelope-icon {
-      width: 16px;
-      height: 12px;
-      margin-right: 10px;
-
       fill: #757575;
 
       @include animate(color);
+
+      @media screen and(min-width: $tablet) {
+        width: 14px;
+        height: 10px;
+        margin-right: 8px;
+      }
+
+      @media screen and(min-width:$desktop) {
+        width: 16px;
+        height: 12px;
+        margin-right: 10px;
+      }
     }
 
     &__smartphone-icon {
-      margin-right: 10px;
-      width: 10px;
-      height: 16px;
-
       fill: #757575;
 
       @include animate(color);
+
+      @media screen and(min-width: $tablet) {
+        width: 10px;
+        height: 14px;
+        margin-right: 8px;
+      }
+
+      @media screen and(min-width:$desktop) {
+        width: 10px;
+        height: 16px;
+        margin-right: 10px;
+      }
     }
 
     &__phone,
