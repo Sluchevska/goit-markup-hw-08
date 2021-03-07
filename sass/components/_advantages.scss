@@ -3,7 +3,7 @@
 .advantages {
   padding-inline-start: 0;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px), (max-width: $mobile) {
     display: block;
   }
   @media screen and (min-width: $tablet) {
@@ -23,7 +23,7 @@
     border-radius: 4px;
     background-repeat: no-repeat;
     background-position: center;
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 480px), (max-width: $mobile) {
       // width: 450px;
       height: 120px;
       margin-bottom: 30px;
@@ -62,7 +62,7 @@
     line-height: 1.14;
     text-transform: uppercase;
     letter-spacing: 0.03em;
-    @media screen and (min-width: $mobile) {
+    @media screen and (min-width: $mobile), (max-width: $mobile) {
       text-align: center;
     }
     @media screen and (min-width: $tablet) {
@@ -83,7 +83,7 @@
 }
 
 .advantages__item {
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: $mobile), (max-width: $mobile) {
     width: 450px;
   }
   @media screen and (min-width: $tablet) {
@@ -121,7 +121,7 @@
 }
 
 .whywe-container {
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: $mobile), (max-width: $mobile) {
     padding-top: 60px;
     padding-bottom: 60px;
   }

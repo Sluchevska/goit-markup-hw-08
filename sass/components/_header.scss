@@ -6,7 +6,7 @@
 
 .main-nav {
   position: relative;
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: $mobile), (max-width: $mobile) {
     display: flex;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -35,7 +35,7 @@
     font-weight: bold;
 
     letter-spacing: 0.03em;
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 480px), (max-width: $mobile) {
       font-size: 24px;
       line-height: 1.17;
     }
@@ -48,9 +48,10 @@
 
 .site-nav {
   padding-inline-start: 0;
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px), (max-width: $mobile) {
     display: none;
   }
+
   @media screen and (min-width: 768px) {
     display: flex;
     margin-left: 88px;
@@ -97,7 +98,7 @@
       margin-top: 36px;
     }
     @media screen and( min-width:$desktop) {
-      top: 19px;
+      top: 15px;
     }
   }
 
@@ -120,7 +121,7 @@
 }
 
 .auth-nav {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px), (max-width: 480px) {
     display: none;
     @media screen and (min-width: $tablet) {
       display: block;
