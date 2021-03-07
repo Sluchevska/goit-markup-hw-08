@@ -6,9 +6,9 @@
 }
 
 .ourclients {
-  display: flex;
   padding-inline-start: 0;
   @media screen and (min-width: 480px) {
+    display: flex;
     flex-wrap: wrap;
   }
 
@@ -58,6 +58,7 @@
     }
     @media screen and (min-width: $desktop) {
       margin-top: 50px;
+      flex-basis: calc((100% - 150px) / 6);
     }
   }
 
@@ -116,6 +117,9 @@
   @media screen and (min-width: $tablet) {
     margin-right: 30px;
   }
+  @media screen and (min-width: $desktop) {
+    margin-right: 30px;
+  }
 }
 
 .ourclients__item:last-child {
@@ -128,6 +132,15 @@
 
 .ourclients__item:nth-child(3n + 3) {
   @media screen and (min-width: $tablet) {
+    margin-right: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 30px;
+  }
+}
+
+.ourclients__item:nth-child(6) {
+  @media screen and (min-width: $desktop) {
     margin-right: 0;
   }
 }
