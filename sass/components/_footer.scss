@@ -106,10 +106,12 @@
 
 .sign-in {
   @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: center;
+    // justify-content: center;
+    margin-left: 151px;
+    margin-right: 137px;
   }
 
   &__btn {
