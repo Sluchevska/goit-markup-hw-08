@@ -1345,19 +1345,33 @@ textarea {
   }
 }
 
-.footer {
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 @media screen and (min-width: 480px) {
   .footer {
     display: block;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -1396,6 +1410,7 @@ textarea {
 
 .join-us__title,
 .sign-in__title {
+  display: inline-block;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -1446,18 +1461,38 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sign-in-box {
-  margin-left: 93px;
-}
-
 @media screen and (min-width: 480px) {
   .sign-in-box {
     margin-left: 0;
   }
 }
 
-.sign-in {
-  margin-top: 20px;
+@media screen and (min-width: 768px) {
+  .sign-in-box {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-in-box {
+    margin-left: 93px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sign-in {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .sign-in__btn {
@@ -1472,7 +1507,6 @@ textarea {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;
-  margin-left: 12px;
   border: none;
   border-radius: 4px;
 }
@@ -1480,6 +1514,18 @@ textarea {
 @media screen and (min-width: 480px) {
   .sign-in__btn {
     margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sign-in__btn {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-in__btn {
+    margin-left: 12px;
   }
 }
 
@@ -1504,6 +1550,12 @@ textarea {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .sign-in__form {
+    width: 450px;
+  }
 }
 
 .join-us {
