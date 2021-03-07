@@ -13,19 +13,19 @@
   }
 
   &-page {
-    padding-top: 94px;
-    padding-bottom: 94px;
-
     @media screen and (min-width: $mobile) {
       padding-bottom: 60px;
       padding-top: 60px;
     }
+
+    @media screen and (min-width: $desktop) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
 
   &__link {
-    margin-top: 50px;
     height: 90px;
-    width: 170px;
 
     @include centeredFlex(flex);
     border-radius: 4px;
@@ -34,28 +34,31 @@
 
     @include animate(border);
     @media screen and (min-width: $mobile) {
-      margin-top: 0;
-      height: 90px;
       width: 210px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 170px;
     }
   }
 
   &__item {
-    margin-right: 30px;
     @media screen and (min-width: $mobile) {
+      margin-right: 30px;
       margin-top: 30px;
-      flex-basis: calc((100% - 60px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
     }
-  }
 
-  .ourclients__item:nth-child(2n) {
-    @media screen and (min-width: $mobile) {
-      margin-right: 0;
+    @media screen and (min-width: $tablet) {
+      flex-basis: calc((100% - 60px) / 3);
     }
-  }
-
-  &__item:last-child {
-    margin-right: 0;
+    @media screen and (min-width: $desktop) {
+      margin-top: 50px;
+    }
   }
 
   &__logo1,
@@ -102,5 +105,29 @@
   &__logo5:focus,
   &__logo6:focus {
     fill: $accentColor;
+  }
+}
+
+.ourclients__item:nth-child(2n) {
+  @media screen and (min-width: $mobile) {
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 30px;
+  }
+}
+
+.ourclients__item:last-child {
+  margin-right: 0;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: auto;
+  }
+}
+
+.ourclients__item:nth-child(3n + 3) {
+  @media screen and (min-width: $tablet) {
+    margin-right: 0;
   }
 }

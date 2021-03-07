@@ -86,12 +86,23 @@
   @media screen and (min-width: $tablet) {
     width: 354px;
     margin-right: 30px;
-    flex-basis: calc((100% - 60px) / 2);
+    margin-bottom: 30px;
+    flex-basis: calc((100% - 30px) / 2);
   }
   @media screen and (min-width: $desktop) {
     width: 270px;
-    //
-    //
+  }
+
+  &:nth-child(2n) {
+    @media screen and (min-width: $tablet) {
+      margin-right: 0;
+    }
+  }
+
+  &:nth-child(n + 3) {
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
+    }
   }
 }
 
