@@ -1,11 +1,19 @@
 @import "../utils/mixins";
 
 .btn-box {
-  justify-content: center;
-  padding-top: 94px;
-  margin-bottom: 50px;
+  padding-inline-start: 0;
+  @media screen and (min-width: $mobile), (max-width: $mobile) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
 
-  display: flex;
+  @media screen and (min-width: $desktop) {
+    justify-content: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
 
   &__item {
     margin-right: 8px;
