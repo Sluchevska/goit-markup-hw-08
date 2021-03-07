@@ -209,7 +209,7 @@ ul {
     border-radius: 2px;
     opacity: 1;
     position: absolute;
-    margin-top: 32px;
+    margin-top: 36px;
   }
 }
 
@@ -1447,6 +1447,12 @@ textarea {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    text-align: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
 
@@ -1495,15 +1501,19 @@ textarea {
   color: #ffffff;
 }
 
-.join-us-box {
-  margin-left: 70px;
-}
-
 @media screen and (min-width: 480px) {
   .join-us-box {
     margin-top: 60px;
     margin-bottom: 60px;
     margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join-us-box {
+    margin-left: 70px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -1561,6 +1571,13 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .sign-in {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .sign-in__btn {
   position: relative;
   font-weight: 700;
@@ -1592,6 +1609,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .sign-in__btn {
     margin-left: 12px;
+    margin-top: 0;
   }
 }
 
@@ -1610,7 +1628,6 @@ textarea {
 
 .sign-in__form {
   min-height: 50px;
-  min-width: 358px;
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
   background-color: transparent;
@@ -1618,9 +1635,21 @@ textarea {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 480px) {
+  .sign-in__form {
+    min-width: 358px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .sign-in__form {
-    width: 450px;
+    min-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-in__form {
+    min-width: 358px;
   }
 }
 
@@ -1640,6 +1669,17 @@ textarea {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (min-width: desktop) {
+  .join-us {
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
 
