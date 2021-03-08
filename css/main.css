@@ -1725,11 +1725,17 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .btn-box {
+    padding-bottom: 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .btn-box {
     padding-top: 94px;
     padding-bottom: 50px;
   }
@@ -1745,7 +1751,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .btn-box__item:nth-child(n + 4) {
     margin-top: 0;
   }
@@ -1757,7 +1763,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .btn-box__item:nth-child(3) {
     margin-right: 8px;
   }
@@ -1816,13 +1822,18 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .projects {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects {
     margin-left: -30px;
     margin-top: -30px;
     padding-bottom: 94px;
@@ -1835,6 +1846,13 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .projects__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .projects__item {
     margin-left: 30px;
@@ -1842,6 +1860,18 @@ img {
     -ms-flex-preferred-size: calc(100% / 3 - 30px);
         flex-basis: calc(100% / 3 - 30px);
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .projects__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects__item:nth-child(2n + 1) {
+    margin-right: 0;
   }
 }
 
@@ -1860,20 +1890,31 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-  width: 370px;
-  height: 294px;
-  background-color: rgba(33, 150, 243, 0.9);
-  opacity: 0;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px), (max-width: 480px) {
+  .projects-overlay {
+    width: 450px;
+    height: 294px;
+    background-color: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-overlay {
+    width: 370px;
+  }
 }
 
 .projects__link:hover .projects-overlay {
@@ -1883,12 +1924,23 @@ img {
 }
 
 .projects-overlay__text {
-  padding: 63px 24px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+@media screen and (min-width: 480px), (max-width: 480px) {
+  .projects-overlay__text {
+    padding: 77px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-overlay__text {
+    padding: 63px 24px;
+  }
 }
 
 .projects__link {
@@ -1917,6 +1969,18 @@ img {
   padding-left: 24px;
   display: block;
   border: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) {
+  .project-box-tehno {
+    padding-bottom: 54px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-box-tehno {
+    padding-bottom: 20px;
+  }
 }
 
 .project-box__title {
