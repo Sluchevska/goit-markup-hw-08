@@ -34,11 +34,17 @@
   width: 30px;
   height: 30px;
 
-  margin-top: 8px;
-  margin-left: 490px;
   border-radius: 50%;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  @media screen and (min-width: $mobile), (max-width: $mobile) {
+    margin-left: 412px;
+    margin-top: 40px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 8px;
+    margin-left: 490px;
+  }
 
   &:hover,
   &:focus {
@@ -48,13 +54,20 @@
 }
 
 .backdrop {
-  position: fixed;
-  z-index: 5;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  @media screen and (min-width: $mobile), (max-width: $mobile) {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    // padding: 50px 30px;
+    overflow-y: scroll;
+  }
+
+  @media screen and (min-width: $desktop) {
+  }
 
   &.is-hidden {
     opacity: 0;
@@ -68,24 +81,30 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  min-width: 528px;
-  min-height: 581px;
-
   background-color: #ffffff;
+  @media screen and (min-width: $mobile), (max-width: $mobile) {
+    max-width: 450px;
+    width: 100%;
+    // height: 609px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 528px;
+    // height: 581px;
+  }
 }
 
 .form {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 41px;
-
-  padding-right: 39px;
+  padding-left: 40px;
+  padding-right: 40px;
   padding-bottom: 40px;
 
   &-agreement {
     position: relative;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 30px;
+    // margin-left: 12px;
   }
 
   &-icons {
@@ -95,6 +114,23 @@
     transform: translateY(-50%);
     fill: $primaryColor;
     @include animate(fill);
+  }
+
+  &-agreement__accept {
+    @media screen and (min-width: $mobile), (max-width: $mobile) {
+      font-size: 12px;
+      line-height: 1.17;
+
+      letter-spacing: 0.03em;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 1.71;
+
+      letter-spacing: 0.03em;
+    }
   }
 }
 
@@ -126,12 +162,8 @@
 .checkbox {
   width: 16px;
   height: 15px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  margin-right: 7px;
-  letter-spacing: 0.03em;
 
+  margin-right: 7px;
   color: #757575;
   appearance: none;
   -webkit-appearance: none;

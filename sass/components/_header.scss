@@ -48,9 +48,9 @@
 
 .site-nav {
   padding-inline-start: 0;
-  @media screen and (min-width: 480px), (max-width: $mobile) {
-    display: none;
-  }
+  // @media screen and (min-width: 480px), (max-width: $mobile) {
+  //   display: none;
+  // }
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -62,13 +62,8 @@
 
   &__link {
     display: block;
-
-    color: $primaryColor;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
     text-decoration: none;
-    letter-spacing: 0.02em;
+    color: $primaryColor;
   }
 
   &__link--current:hover,
@@ -104,10 +99,30 @@
 
   &__item {
     margin-right: 50px;
+    @media screen and (min-width: 480px), (max-width: $mobile) {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 1.175;
+
+      letter-spacing: 0.02em;
+      text-align: left;
+      margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      text-align: center;
+      letter-spacing: 0.02em;
+    }
   }
 
   &__item:last-child {
     margin-right: 0;
+    @media screen and (min-width: 480px), (max-width: $mobile) {
+      margin-bottom: 302px;
+    }
   }
 
   &__adjective {
@@ -122,28 +137,46 @@
 
 .auth-nav {
   @media screen and (min-width: 480px), (max-width: 480px) {
-    display: none;
+    flex-direction: column-reverse;
+    display: inline-flex;
+  }
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-left: auto;
+  }
+
+  &__item {
+  }
+
+  &__item:last-child {
+    @media screen and (min-width: 480px), (max-width: 480px) {
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 40px;
+
+      letter-spacing: 0.02em;
+
+      color: #2196f3;
+    }
+  }
+
+  &__item:first-child {
     @media screen and (min-width: $tablet) {
-      display: block;
+      margin-bottom: 10px;
     }
+  }
+
+  &__item + &__item {
     @media screen and (min-width: $desktop) {
-      display: flex;
-      margin-left: auto;
+      margin-left: 30px;
     }
+  }
 
-    &__item:first-child {
-      @media screen and (min-width: $tablet) {
-        margin-bottom: 10px;
-      }
-    }
-
-    &__item + &__item {
-      @media screen and (min-width: $desktop) {
-        margin-left: 30px;
-      }
-    }
-
-    &__link {
+  &__link {
+    @media screen and (min-width: $desktop) {
       color: $secondaryColor;
       font-weight: 500;
       font-size: 14px;
@@ -151,71 +184,77 @@
       text-decoration: none;
       letter-spacing: 0.02em;
     }
+  }
 
-    &__envelope-icon {
-      fill: #757575;
+  &__envelope-icon {
+    fill: #757575;
 
-      @include animate(color);
-
-      @media screen and(min-width: $tablet) {
-        width: 14px;
-        height: 10px;
-        margin-right: 8px;
-      }
-
-      @media screen and(min-width:$desktop) {
-        width: 16px;
-        height: 12px;
-        margin-right: 10px;
-      }
+    @include animate(color);
+    @media screen and (min-width: 480px), (max-width: 480px) {
+      display: none;
     }
 
-    &__smartphone-icon {
-      fill: #757575;
-
-      @include animate(color);
-
-      @media screen and(min-width: $tablet) {
-        width: 10px;
-        height: 14px;
-        margin-right: 8px;
-      }
-
-      @media screen and(min-width:$desktop) {
-        width: 10px;
-        height: 16px;
-        margin-right: 10px;
-      }
+    @media screen and(min-width: $tablet) {
+      width: 14px;
+      height: 10px;
+      margin-right: 8px;
     }
 
-    &__phone,
-    &__email {
-      display: flex;
+    @media screen and(min-width:$desktop) {
+      width: 16px;
+      height: 12px;
+      margin-right: 10px;
+    }
+  }
 
-      align-items: center;
+  &__smartphone-icon {
+    fill: #757575;
 
-      @include animate(color);
+    @include animate(color);
+    @media screen and (min-width: 480px), (max-width: 480px) {
+      display: none;
     }
 
-    &__email:hover,
-    &__email:focus {
-      color: $accentColor;
+    @media screen and(min-width: $tablet) {
+      width: 10px;
+      height: 14px;
+      margin-right: 8px;
     }
 
-    &__email:hover .auth-nav__envelope-icon,
-    &__email:focus .auth-nav__envelope-icon {
-      fill: currentColor;
+    @media screen and(min-width:$desktop) {
+      width: 10px;
+      height: 16px;
+      margin-right: 10px;
     }
+  }
 
-    &__phone:hover,
-    &__phone:focus {
-      color: $accentColor;
-    }
+  &__phone,
+  &__email {
+    display: flex;
 
-    &__phone:hover &__smartphone-icon,
-    &__phone:focus &__smartphone-icon {
-      fill: currentColor;
-    }
+    align-items: center;
+
+    @include animate(color);
+  }
+
+  &__email:hover,
+  &__email:focus {
+    color: $accentColor;
+  }
+
+  &__email:hover .auth-nav__envelope-icon,
+  &__email:focus .auth-nav__envelope-icon {
+    fill: currentColor;
+  }
+
+  &__phone:hover,
+  &__phone:focus {
+    color: $accentColor;
+  }
+
+  &__phone:hover &__smartphone-icon,
+  &__phone:focus &__smartphone-icon {
+    fill: currentColor;
   }
 }
 
@@ -249,16 +288,20 @@
 }
 
 .menu-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 796px;
-  padding: 48px 40px;
-  background-color: yellowgreen;
-
+  @media screen and (min-width: $mobile), (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 796px;
+    padding: 48px 40px;
+    background-color: $heroColor;
+  }
   &.is-open {
     display: block;
   }
+  // @media screen and (max-width: 785px) {
+  //   display: block;
+  // }
 }
