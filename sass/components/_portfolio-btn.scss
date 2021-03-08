@@ -7,6 +7,7 @@
     flex-wrap: wrap;
     padding-top: 60px;
     padding-bottom: 40px;
+    flex-basis: calc((100% - 16px) / 3);
   }
 
   @media screen and (min-width: $tablet) {
@@ -23,23 +24,23 @@
     margin-right: 8px;
   }
 
-  &__item:nth-child(n + 4) {
+  &__item:nth-child(-n + 3) {
     @media screen and (min-width: $mobile), (max-width: $mobile) {
-      margin-top: 15px;
+      margin-bottom: 15px;
     }
     @media screen and (min-width: $tablet) {
-      margin-top: 0;
+      margin-bottom: 0;
     }
   }
 
-  &__item:nth-child(3) {
-    @media screen and (min-width: $mobile), (max-width: $mobile) {
-      margin-right: 0;
-    }
-    @media screen and (min-width: $tablet) {
-      margin-right: 8px;
-    }
-  }
+  // &__item:nth-child(3) {
+  //   @media screen and (min-width: $mobile), (max-width: $mobile) {
+  //     margin-right: 0;
+  //   }
+  //   @media screen and (min-width: $tablet) {
+  //     margin-right: 8px;
+  //   }
+  // }
 
   &__button {
     padding-top: 6px;

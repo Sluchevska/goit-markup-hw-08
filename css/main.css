@@ -1722,6 +1722,8 @@ textarea {
         flex-wrap: wrap;
     padding-top: 60px;
     padding-bottom: 40px;
+    -ms-flex-preferred-size: calc((100% - 16px) / 3);
+        flex-basis: calc((100% - 16px) / 3);
   }
 }
 
@@ -1746,26 +1748,14 @@ textarea {
 }
 
 @media screen and (min-width: 480px), (max-width: 480px) {
-  .btn-box__item:nth-child(n + 4) {
-    margin-top: 15px;
+  .btn-box__item:nth-child(-n + 3) {
+    margin-bottom: 15px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .btn-box__item:nth-child(n + 4) {
-    margin-top: 0;
-  }
-}
-
-@media screen and (min-width: 480px), (max-width: 480px) {
-  .btn-box__item:nth-child(3) {
-    margin-right: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .btn-box__item:nth-child(3) {
-    margin-right: 8px;
+  .btn-box__item:nth-child(-n + 3) {
+    margin-bottom: 0;
   }
 }
 
