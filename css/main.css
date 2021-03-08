@@ -228,7 +228,7 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .site-nav__item {
     font-weight: 500;
     font-size: 14px;
@@ -245,6 +245,12 @@ body.modal-open {
 @media screen and (min-width: 480px), (max-width: 480px) {
   .site-nav__item:last-child {
     margin-bottom: 302px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav__item:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -275,6 +281,10 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .auth-nav {
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+            flex-direction: inherit;
     display: block;
   }
 }
@@ -288,16 +298,6 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 480px), (max-width: 480px) {
-  .auth-nav__item:last-child {
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 40px;
-    letter-spacing: 0.02em;
-    color: #2196f3;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .auth-nav__item:first-child {
     margin-bottom: 10px;
@@ -307,17 +307,6 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .auth-nav__item + .auth-nav__item {
     margin-left: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .auth-nav__link {
-    color: #757575;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.15;
-    text-decoration: none;
-    letter-spacing: 0.02em;
   }
 }
 
@@ -339,6 +328,7 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .auth-nav__envelope-icon {
+    display: block;
     width: 14px;
     height: 10px;
     margin-right: 8px;
@@ -371,6 +361,7 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .auth-nav__smartphone-icon {
+    display: block;
     width: 10px;
     height: 14px;
     margin-right: 8px;
@@ -389,6 +380,7 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-decoration: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -416,6 +408,52 @@ body.modal-open {
 .auth-nav__phone:hover .auth-nav__smartphone-icon,
 .auth-nav__phone:focus .auth-nav__smartphone-icon {
   fill: currentColor;
+}
+
+@media screen and (min-width: 480px), (max-width: 480px) {
+  .auth-nav__phone {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .auth-nav__phone {
+    color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (min-width: 480px), (max-width: 480px) {
+  .auth-nav__email {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #757575;
+    margin-top: 32px;
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .auth-nav__email {
+    color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .menu-button {
@@ -455,7 +493,7 @@ body.modal-open {
   display: none;
 }
 
-@media screen and (min-width: 480px), (max-width: 767px) {
+@media screen and (min-width: 480px), (max-width: 480px) {
   .menu-container {
     display: none;
     position: absolute;
@@ -470,6 +508,18 @@ body.modal-open {
 
 .menu-container.is-open {
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: transparent;
+    padding: 0;
+    -webkit-transform: translate(50%, 50%);
+            transform: translate(50%, 50%);
+  }
 }
 
 .hero {
