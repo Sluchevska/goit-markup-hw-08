@@ -146,10 +146,10 @@
   @media screen and (min-width: $tablet) {
     flex-direction: inherit;
     display: block;
+    margin-left: auto;
   }
   @media screen and (min-width: $desktop) {
     display: flex;
-    margin-left: auto;
   }
 
   &__item:first-child {
@@ -326,9 +326,10 @@
     display: block;
   }
   @media screen and (min-width: $tablet) {
+    position: relative;
+    height: 0;
     display: flex;
     background-color: transparent;
     padding: 0;
-    transform: translate(50%, 50%);
   }
 }

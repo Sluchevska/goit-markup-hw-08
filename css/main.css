@@ -49,6 +49,8 @@ p,
 ul {
   margin-top: 0;
   margin-bottom: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
 
 .container {
@@ -286,6 +288,7 @@ body.modal-open {
         -ms-flex-direction: inherit;
             flex-direction: inherit;
     display: block;
+    margin-left: auto;
   }
 }
 
@@ -294,7 +297,6 @@ body.modal-open {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: auto;
   }
 }
 
@@ -512,13 +514,13 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .menu-container {
+    position: relative;
+    height: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     background-color: transparent;
     padding: 0;
-    -webkit-transform: translate(50%, 50%);
-            transform: translate(50%, 50%);
   }
 }
 
