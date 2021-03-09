@@ -793,9 +793,9 @@ body.modal-open {
 }
 
 .checkbox {
+  position: absolute;
   width: 16px;
   height: 15px;
-  margin-right: 7px;
   color: #757575;
   -moz-appearance: none;
        appearance: none;
@@ -804,10 +804,9 @@ body.modal-open {
 }
 
 .check-icon {
-  position: absolute;
+  border-radius: 2px;
+  margin-right: 8px;
   display: inline-block;
-  top: 0;
-  left: 0;
   width: 16px;
   height: 15px;
   background-color: transparent;
@@ -817,9 +816,27 @@ body.modal-open {
 .checkbox:checked + .check-icon {
   background-color: #2196f3;
   border-radius: 2px;
-  background-origin: border-box;
   border-color: #2196f3;
-  background-size: contain;
+  border: none;
+}
+
+.form-agreement__accept {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-agreement__accept {
+    margin-left: 12px;
+  }
+}
+
+.check-agreem {
+  margin-right: 4px;
 }
 
 textarea {
