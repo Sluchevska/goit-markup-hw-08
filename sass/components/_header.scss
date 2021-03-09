@@ -314,6 +314,14 @@
   display: none;
 }
 
+.menu-button:hover .icon-menu24,
+.menu-button:focus .icon-menu24,
+.menu-button:hover .icon-close24,
+.menu-button:focus .icon-close24 {
+  fill: $accentColor;
+  @include animate(fill);
+}
+
 .menu-container {
   @media screen and (min-width: $mobile), (max-width: $mobile) {
     display: none;
@@ -353,9 +361,6 @@
       display: none;
     }
   }
-  // &__link:first-of-type {
-  //   margin-left: 0;
-  // }
 
   &__item {
     margin-left: 10px;

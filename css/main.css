@@ -498,6 +498,19 @@ body.modal-open {
   display: none;
 }
 
+.menu-button:hover .icon-menu24,
+.menu-button:focus .icon-menu24,
+.menu-button:hover .icon-close24,
+.menu-button:focus .icon-close24 {
+  fill: #2196f3;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @media screen and (min-width: 480px), (max-width: 480px) {
   .menu-container {
     display: none;
