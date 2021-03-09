@@ -51,6 +51,7 @@
 
   &__item:last-child {
     margin-right: 0;
+    margin-bottom: 0;
   }
 
   &__title {
@@ -85,11 +86,12 @@
 .advantages__item {
   @media screen and (min-width: $mobile), (max-width: $mobile) {
     width: 450px;
+    margin-bottom: 30px;
   }
   @media screen and (min-width: $tablet) {
     width: 354px;
     margin-right: 30px;
-    margin-bottom: 30px;
+
     flex-basis: calc((100% - 30px) / 2);
   }
   @media screen and (min-width: $desktop) {

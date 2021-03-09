@@ -110,11 +110,11 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .main-nav {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     padding-top: 26px;
     padding-bottom: 26px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -205,13 +205,13 @@ body.modal-open {
     border-radius: 2px;
     opacity: 1;
     position: absolute;
-    margin-top: 36px;
+    margin-top: 25px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .site-nav__link--current::after {
-    top: 15px;
+    margin-top: 32px;
   }
 }
 
@@ -237,6 +237,7 @@ body.modal-open {
     line-height: 1.14;
     text-align: center;
     letter-spacing: 0.02em;
+    margin-bottom: 0;
   }
 }
 
@@ -283,6 +284,7 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .auth-nav {
+    margin-top: -12px;
     -webkit-box-orient: inherit;
     -webkit-box-direction: inherit;
         -ms-flex-direction: inherit;
@@ -297,6 +299,7 @@ body.modal-open {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 0;
   }
 }
 
@@ -522,6 +525,58 @@ body.modal-open {
     background-color: transparent;
     padding: 0;
   }
+}
+
+.mobile-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mobile-nav__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-nav__link {
+    display: none;
+  }
+}
+
+.mobile-nav__item {
+  margin-left: 10px;
+}
+
+.mobile-nav__item:first-child {
+  margin-left: -10px;
+}
+
+.mobile-nav__item::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+  display: inline-block;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-nav__item::after {
+    display: none;
+  }
+}
+
+.mobile-nav__item:last-of-type::after {
+  margin-left: 0;
+  content: "";
+  width: 0;
 }
 
 .hero {
@@ -997,6 +1052,7 @@ textarea {
 
 .advantages__item:last-child {
   margin-right: 0;
+  margin-bottom: 0;
 }
 
 .advantages__title {
@@ -1038,6 +1094,7 @@ textarea {
 @media screen and (min-width: 480px), (max-width: 480px) {
   .advantages__item {
     width: 450px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1045,7 +1102,6 @@ textarea {
   .advantages__item {
     width: 354px;
     margin-right: 30px;
-    margin-bottom: 30px;
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
   }
