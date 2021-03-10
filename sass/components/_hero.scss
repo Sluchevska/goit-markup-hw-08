@@ -20,20 +20,70 @@
   &--overlay {
     max-width: 1600px;
 
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../icons/main-bkg.jpg);
-
     background-color: #2f303a;
 
     background-repeat: no-repeat;
     background-position: center;
 
-    // @media screen and (min-width: 480px) {
-    //   max-width: 480px;
-    // }
+    @media screen and (min-width: 480px), (max-width: 480px) {
+      width: 480px;
+      height: 400px;
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-bg@1x-480.jpg);
+      background-size: 480px 400px;
+    }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-bg@2x-480.jpg);
+    }
+
+    @media screen and (min-width: $tablet) {
+      width: 768px;
+      height: 400px;
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-bg@1x-768.jpg);
+      background-size: 768px 400px;
+    }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-bg@2x-768.jpg);
+    }
+
+    @media screen and (min-width: $desktop) {
+      max-width: 1600px;
+      height: 600px;
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-bg@1x-1600.jpg);
+      background-size: 1600px 600px;
+    }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-bg@2x-1600.jpg);
+    }
   }
 
   &__text {
