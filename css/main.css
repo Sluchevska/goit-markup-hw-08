@@ -2163,8 +2163,8 @@ textarea {
 
 @media screen and (min-width: 480px), (max-width: 480px) {
   .projects-overlay {
-    width: 450px;
-    height: 294px;
+    width: 100%;
+    height: 100%;
     background-color: rgba(33, 150, 243, 0.9);
     opacity: 0;
     -webkit-transform: translateY(100%);
@@ -2177,12 +2177,6 @@ textarea {
             transition-duration: 250ms;
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .projects-overlay {
-    width: 370px;
   }
 }
 
