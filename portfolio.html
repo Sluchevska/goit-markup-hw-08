@@ -23,7 +23,7 @@
     
             <a href="" class="main-nav__full-logo"><span class="main-nav__logo-firstpart">Web</span><span
                     class="main-nav__logo-secondpart">Studio</span></a>
-                    <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                    <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button aria-label="menu-label">
                         <svg width="24" height="16" aria-label="switch on/off">
                             <use class="icon-close24" href="./images/icons.svg#icon-close_24px"></use>
                             <use class="icon-menu24" href="./images/icons.svg#icon-menu_24px"></use>
@@ -76,11 +76,11 @@
 <section class="container">
     <h1 class="visually-hidden">Our projects</h1>
     <ul class="list btn-box">
-        <li class="btn-box__item"><button type="button" class="btn-box__button">Все</button></li>
-        <li class="btn-box__item"><button type="button" class="btn-box__button">Веб-сайты</button></li>
-        <li class="btn-box__item"><button type="button" class="btn-box__button">Приложения</button></li>
-        <li class="btn-box__item"><button type="button" class="btn-box__button">Дизайн</button></li>
-        <li class="btn-box__item"><button type="button" class="btn-box__button">Маркетинг</button></li>
+        <li class="btn-box__item"><button type="button" class="btn-box__button" aria-label="all">Все</button></li>
+        <li class="btn-box__item"><button type="button" class="btn-box__button" aria-label="web">Веб-сайты</button></li>
+        <li class="btn-box__item"><button type="button" class="btn-box__button" aria-label="attachment">Приложения</button></li>
+        <li class="btn-box__item"><button type="button" class="btn-box__button" aria-label="design">Дизайн</button></li>
+        <li class="btn-box__item"><button type="button" class="btn-box__button" aria-label="Marketing">Маркетинг</button></li>
     </ul>
     <ul class="list projects">
         <li class="projects__item">
@@ -368,7 +368,7 @@
                     <label for="signin-form">
                         <input type="email" name="email" id="signin-form" placeholder="E-mail" class="sign-in__form">
                     </label>
-                    <button type="submit" class="sign-in__btn">Подписаться </button>
+                    <button type="submit" class="sign-in__btn" aria-label="submit">Подписаться </button>
                 </form>
     
             </section>
