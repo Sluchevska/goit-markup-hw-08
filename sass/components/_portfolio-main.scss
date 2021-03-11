@@ -56,8 +56,6 @@
   &__thumb {
     position: relative;
     overflow: hidden;
-    // @media screen and (min-width: $mobile), (max-width: $mobile) {
-    //   width: 450px;
   }
 
   &-overlay {
@@ -73,9 +71,6 @@
       transform: translateY(100%);
 
       @include animate(transform);
-    }
-    @media screen and (min-width: $desktop) {
-      // width: 370px;
     }
   }
 
