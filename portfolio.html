@@ -86,20 +86,18 @@
         <li class="projects__item">
             <a href="" class="projects__link"> 
         <div class="projects__thumb">
-            <img 
-            srcset="
-            ./portf-img/portf-1@1x.jpg 480w, 
-            ./portf-img/portf-1@2x.jpg 960w,
-            ./portf-img/portf1-768@1x.jpg 384w,
-            ./portf-img/portf1-768@2x.jpg 768w,
-            ./portf-img/portf1-1200@1x.jpg 400w,
-            ./portf-img/portf1-1200@2x.jpg 800w"
-            
-            
-            src="./portf-img/portf-1@1x.jpg"
-            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-            
-            alt="prtf-img1">
+            <picture>
+                <source media="(max-width: 767px)" srcset="./portf-img/portf-1@1x.jpg 480w, 
+            ./portf-img/portf-1@2x.jpg 960w" sizes="(min-width: 480px) 100vw">
+
+            <source media="(max-width: 1199px)" srcset="./portf-img/portf1-768@1x.jpg 384w,
+            ./portf-img/portf1-768@2x.jpg 768w" sizes="(min-width: 768px) 50vw">
+
+            <source media="(min-width: 1200px)" srcset="./portf-img/portf1-1200@1x.jpg 400w,
+            ./portf-img/portf1-1200@2x.jpg 800w" sizes="(min-width: 1200px) 33vw">
+
+            <img src="./portf-img/portf-1@1x.jpg"
+            alt="prtf-img1"></picture>
             <div class="projects-overlay">
                 <p class="projects-overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                     платформу для цифрового
@@ -126,7 +124,7 @@
             src="./portf-img/portf-2@1x.jpg"
             sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
 
-            alt="prtf-img2" ><div class="projects-overlay">
+            alt="prtf-img2" height="294" ><div class="projects-overlay">
                 <p class="projects-overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                     платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.
@@ -153,7 +151,7 @@
             src="./portf-img/portf-3@1x.jpg"
             sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
             
-            alt="prtf-img3" ><div class="projects-overlay">
+            alt="prtf-img3" height="294"><div class="projects-overlay">
                 <p class="projects-overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                     платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.
@@ -179,7 +177,7 @@
             
             src="./portf-img/portf-4@1x.jpg"
             sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-            alt="prtf-img4"><div class="projects-overlay">
+            alt="prtf-img4" height="294"><div class="projects-overlay">
                 <p class="projects-overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                     платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.
@@ -204,7 +202,7 @@
             
             src="./portf-img/portf-5@1x.jpg"
             sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-            alt="prtf-img5"><div class="projects-overlay">
+            alt="prtf-img5" height="294"><div class="projects-overlay">
                 <p class="projects-overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                     платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.
@@ -229,7 +227,7 @@
             
             src="./portf-img/portf-6@1x.jpg"
             sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-            alt="prtf-img6"><div class="projects-overlay">
+            alt="prtf-img6" height="294"><div class="projects-overlay">
                 <p class="projects-overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                     платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.
@@ -254,7 +252,7 @@
             
             src="./portf-img/portf-7@1x.jpg"
             sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-            alt="prtf-img7"><div class="projects-overlay">
+            alt="prtf-img7" height="294"><div class="projects-overlay">
                 <p class="projects-overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                     платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.
@@ -279,7 +277,7 @@
             
             src="./portf-img/portf-8@1x.jpg"
             sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-            alt="prtf-img8"><div class="projects-overlay">
+            alt="prtf-img8" height="294"><div class="projects-overlay">
                 <p class="projects-overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                     платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.
@@ -304,7 +302,7 @@
             
             src="./portf-img/portf-9@1x.jpg"
             sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-            alt="prtf-img9"><div class="projects-overlay">
+            alt="prtf-img9" height="294"><div class="projects-overlay">
                 <p class="projects-overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                     платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.

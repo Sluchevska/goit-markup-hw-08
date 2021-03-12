@@ -53,6 +53,7 @@
   &__thumb {
     position: relative;
     overflow: hidden;
+    height: 294px;
   }
 
   &-overlay {
@@ -60,15 +61,14 @@
     top: 0;
     right: 0;
 
-    @media screen and (min-width: $mobile), (max-width: $mobile) {
-      width: 100%;
-      height: 100%;
-      background-color: rgba(33, 150, 243, 0.9);
-      opacity: 0;
-      transform: translateY(100%);
+    // @media screen and (min-width: $mobile), (max-width: $mobile) {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+    transform: translateY(100%);
 
-      @include animate(transform);
-    }
+    @include animate(transform);
   }
 
   &__link:hover &-overlay {
