@@ -111,20 +111,20 @@
             </div></a>
         </li>
         <li class="projects__item"><a href="" class="projects__link"><div class="projects__thumb">
-            <img
-            srcset="
-            ./portf-img/portf-2@1x.jpg 480w, 
-            ./portf-img/portf-2@2x.jpg 960w,
-            ./portf-img/portf2-768@1x.jpg 384w,
-            ./portf-img/portf2-768@2x.jpg 768w,
-            ./portf-img/portf2-1200@1x.jpg 400w,
-            ./portf-img/portf2-1200@2x.jpg 800w"
-            
-            
-            src="./portf-img/portf-2@1x.jpg"
-            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+            <picture>
+                <source media="(max-width: 767px)" srcset="./portf-img/portf-2@1x.jpg 480w, 
+            ./portf-img/portf-2@2x.jpg 960w" sizes="(min-width: 480px) 100vw">
 
-            alt="prtf-img2" height="294" ><div class="projects-overlay">
+            <source media="(max-width: 1199px)" srcset="./portf-img/portf2-768@1x.jpg 384w,
+            ./portf-img/portf2-768@2x.jpg 768w" sizes="(min-width: 768px) 50vw">
+
+            <source media="(min-width: 1200px)" srcset="./portf-img/portf2-1200@1x.jpg 400w,
+            ./portf-img/portf2-1200@2x.jpg 800w" sizes="(min-width: 1200px) 33vw">
+
+            <img
+            src="./portf-img/portf-2@1x.jpg"
+            alt="prtf-img2"></picture>
+            <div class="projects-overlay">
                 <p class="projects-overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                     платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.
@@ -138,20 +138,23 @@
             </a>
         </li>
         <li class="projects__item"><a href="" class="projects__link"><div class="projects__thumb">
-            <img 
-            srcset="
-            ./portf-img/portf-3@1x.jpg 480w, 
-            ./portf-img/portf-3@2x.jpg 960w,
-            ./portf-img/portf3-768@1x.jpg 384w,
-            ./portf-img/portf3-768@2x.jpg 768w,
-            ./portf-img/portf3-1200@1x.jpg 400w,
-            ./portf-img/portf3-1200@2x.jpg 800w"
+            <picture>
+                <source media="(max-width: 767px)" srcset="./portf-img/portf-3@1x.jpg 480w, 
+            ./portf-img/portf-3@2x.jpg 960w" sizes="(min-width: 480px) 100vw">
             
+                <source media="(max-width: 1199px)" srcset="./portf-img/portf3-768@1x.jpg 384w,
+            ./portf-img/portf3-768@2x.jpg 768w" sizes="(min-width: 768px) 50vw">
             
+                <source media="(min-width: 1200px)" srcset="./portf-img/portf3-1200@1x.jpg 400w,
+            ./portf-img/portf3-1200@2x.jpg 800w" sizes="(min-width: 1200px) 33vw">
+
+
+            <img             
             src="./portf-img/portf-3@1x.jpg"
-            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+           
             
-            alt="prtf-img3" height="294"><div class="projects-overlay">
+            alt="prtf-img3"></picture>
+            <div class="projects-overlay">
                 <p class="projects-overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                     платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.
@@ -165,19 +168,22 @@
 </a>
         </li>
         <li class="projects__item"><a href="" class="projects__link"><div class="projects__thumb">
+            <picture>
+                <source media="(max-width: 767px)" srcset="./portf-img/portf-4@1x.jpg 480w, 
+            ./portf-img/portf-4@2x.jpg 960w" sizes="(min-width: 480px) 100vw">
+            
+                <source media="(max-width: 1199px)" srcset="./portf-img/portf4-768@1x.jpg 384w,
+            ./portf-img/portf4-768@2x.jpg 768w" sizes="(min-width: 768px) 50vw">
+            
+                <source media="(min-width: 1200px)" srcset="./portf-img/portf4-1200@1x.jpg 400w,
+            ./portf-img/portf4-1200@2x.jpg 800w" sizes="(min-width: 1200px) 33vw">
+
+
             <img 
-            srcset="
-            ./portf-img/portf-4@1x.jpg 480w, 
-            ./portf-img/portf-4@2x.jpg 960w,
-            ./portf-img/portf4-768@1x.jpg 384w,
-            ./portf-img/portf4-768@2x.jpg 768w,
-            ./portf-img/portf4-1200@1x.jpg 400w,
-            ./portf-img/portf4-1200@2x.jpg 800w"
-            
-            
             src="./portf-img/portf-4@1x.jpg"
-            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-            alt="prtf-img4" height="294"><div class="projects-overlay">
+           
+            alt="prtf-img4"></picture>
+            <div class="projects-overlay">
                 <p class="projects-overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                     платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.
