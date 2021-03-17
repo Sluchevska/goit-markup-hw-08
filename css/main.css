@@ -614,7 +614,7 @@ body.modal-open {
     height: 400px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg@1x-480.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg@1x-480.jpg);
-    background-size: 480px 400px;
+    background-size: cover;
   }
 }
 
@@ -630,7 +630,6 @@ body.modal-open {
     height: 400px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg@1x-768.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg@1x-768.jpg);
-    background-size: 768px 400px;
   }
 }
 
@@ -1196,15 +1195,6 @@ textarea {
   }
 }
 
-.whatwedo-page__title, .ourteam-page__title, .ourclients-page__title {
-  color: #212121;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
 @media screen and (min-width: 480px), (max-width: 480px) {
   .whatwedo-page__title {
     display: none;
@@ -1275,15 +1265,6 @@ textarea {
   width: 370px;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
-}
-
-.whatwedo-page__title, .ourteam-page__title, .ourclients-page__title {
-  color: #212121;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .ourteam {
@@ -1505,15 +1486,6 @@ textarea {
 .media-box__link:hover .media-box__linkd-icon,
 .media-box__link:focus .media-box__linkd-icon {
   fill: currentColor;
-}
-
-.whatwedo-page__title, .ourteam-page__title, .ourclients-page__title {
-  color: #212121;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .ourclients {

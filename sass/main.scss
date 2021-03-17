@@ -1,4 +1,6 @@
-@import "./base/resetstyle";
+
+@import "./utils/mixins";
+@import "./utils/breakpoints";
 @import "./utils/variables";
 @import "./base/global";
 @import "./base/layout";
@@ -13,5 +15,4 @@
 @import "./components/footer";
 @import "./components/portfolio-btn";
 @import "./components/portfolio-main";
-@import "./utils/mixins";
-@import "./utils/breakpoints";
+
