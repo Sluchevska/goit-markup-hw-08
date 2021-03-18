@@ -1,5 +1,3 @@
-// @import "../utils/mixins";
-
 .header {
   border-bottom: 1px solid #e5e5e5;
 }
@@ -87,26 +85,21 @@
       opacity: 1;
       position: absolute;
       // top: 28px;
-      margin-top: 25px;
+      margin-top: 48px;
     }
     @media screen and( min-width:$desktop) {
-      margin-top: 32px;
+      margin-top: 37px;
     }
   }
 
   &__item {
     margin-right: 50px;
     @media screen and (min-width: 480px), (max-width: $mobile) {
-      font-weight: 500;
-      font-size: 40px;
-      line-height: 1.175;
-
-      letter-spacing: 0.02em;
-      text-align: left;
-      margin-bottom: 32px;
+      display: none;
     }
 
     @media screen and (min-width: $tablet) {
+      display: block;
       font-weight: 500;
       font-size: 14px;
       line-height: 1.14;
@@ -118,14 +111,7 @@
 
   &__item:last-child {
     margin-right: 0;
-    @media screen and (min-width: 480px), (max-width: $mobile) {
-      margin-bottom: 302px;
-    }
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 0;
-    }
   }
-
   &__adjective {
     @include animate(color);
   }
@@ -138,8 +124,7 @@
 
 .auth-nav {
   @media screen and (min-width: 480px), (max-width: 480px) {
-    flex-direction: column-reverse;
-    display: inline-flex;
+    display: none;
   }
   @media screen and (min-width: $tablet) {
     margin-top: -12px;
@@ -238,155 +223,22 @@
   }
 
   &__phone {
-    @media screen and (min-width: 480px), (max-width: 480px) {
-      font-weight: 500;
-      font-size: 34px;
-      line-height: 40px;
-
-      letter-spacing: 0.02em;
-
-      color: #2196f3;
-    }
-    @media screen and (min-width: $tablet) {
-      color: $secondaryColor;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.15;
-      text-decoration: none;
-      letter-spacing: 0.02em;
-    }
+    color: $secondaryColor;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    text-decoration: none;
+    letter-spacing: 0.02em;
   }
 
   &__email {
-    @media screen and (min-width: 480px), (max-width: 480px) {
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 1.17;
-      letter-spacing: 0.02em;
-
-      color: #757575;
-      margin-top: 32px;
-      margin-bottom: 64px;
-    }
-    @media screen and (min-width: $tablet) {
-      color: $secondaryColor;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.15;
-      text-decoration: none;
-      letter-spacing: 0.02em;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-  }
-}
-
-.menu-button {
-  position: relative;
-  z-index: 7;
-  width: 40px;
-  height: 40px;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  margin-left: auto;
-  justify-content: center;
-  align-items: center;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
-.menu-button .icon-close24 {
-  display: none;
-}
-
-.menu-button.is-open .icon-close24 {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu24 {
-  display: none;
-}
-
-.menu-button:hover .icon-menu24,
-.menu-button:focus .icon-menu24,
-.menu-button:hover .icon-close24,
-.menu-button:focus .icon-close24 {
-  fill: $accentColor;
-  @include animate(fill);
-}
-
-.menu-container {
-  @media screen and (min-width: $mobile), (max-width: $mobile) {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100vh;
-    padding: 48px 40px;
-    background-color: $heroColor;
-  }
-
-  &.is-open {
-    display: block;
-  }
-  @media screen and (min-width: $tablet) {
-    position: relative;
-    height: 0;
-    display: flex;
-    background-color: transparent;
-    padding: 0;
-  }
-}
-
-.mobile-nav {
-  display: flex;
-
-  &__link {
-    text-decoration: none;
+    color: $secondaryColor;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
+    font-size: 14px;
+    line-height: 1.15;
+    text-decoration: none;
     letter-spacing: 0.02em;
-
-    color: #2196f3;
-    margin-left: 10px;
-    @media screen and (min-width: $tablet) {
-      display: none;
-    }
-  }
-
-  &__item {
-    margin-left: 10px;
-  }
-
-  &__item:first-child {
-    margin-left: -10px;
-  }
-
-  &__item::after {
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 22px;
-    background-color: rgba(33, 33, 33, 0.2);
-
-    display: inline-block;
-    margin-left: 10px;
-    @media screen and (min-width: $tablet) {
-      display: none;
-    }
-  }
-
-  &__item:last-of-type::after {
-    margin-left: 0;
-    content: "";
-    width: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
