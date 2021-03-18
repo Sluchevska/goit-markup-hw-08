@@ -1,6 +1,3 @@
-// @import "../utils/placeholders";
-// @import "../utils/mixins";
-
 .ourteam-page__title {
   @extend %page__title;
 }
@@ -138,7 +135,6 @@
   &__twit-icon,
   &__facebook-icon,
   &__linkd-icon {
-    fill: #afb1b8;
     width: 20px;
     height: 20px;
   }
@@ -147,7 +143,7 @@
     @include centeredFlex(flex);
     width: 44px;
     height: 44px;
-
+    fill: #afb1b8;
     border-radius: 50%;
 
     @include animate(background-color);
@@ -156,26 +152,8 @@
 
   &__link:hover,
   &__link:focus {
-    color: $heroColor;
+    fill: $heroColor;
 
     background-color: $accentColor;
-  }
-
-  &__insta-icon,
-  &__twit-icon,
-  &__linkd-icon,
-  &__facebook-icon {
-    @include animate(fill);
-  }
-
-  &__link:hover &__twit-icon,
-  &__link:focus &__twit-icon,
-  &__link:hover &__insta-icon,
-  &__link:focus &__insta-icon,
-  &__link:hover &__facebook-icon,
-  &__link:focus &__facebook-icon,
-  &__link:hover &__linkd-icon,
-  &__link:focus &__linkd-icon {
-    fill: currentColor;
   }
 }

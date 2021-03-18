@@ -112,6 +112,7 @@
   &__item:last-child {
     margin-right: 0;
   }
+
   &__adjective {
     @include animate(color);
   }
@@ -137,6 +138,10 @@
     margin-top: 0;
   }
 
+  &__item {
+    fill: #757575;
+  }
+
   &__item:first-child {
     @media screen and (min-width: $tablet) {
       margin-bottom: 10px;
@@ -150,8 +155,6 @@
   }
 
   &__envelope-icon {
-    fill: #757575;
-
     @include animate(color);
     @media screen and (min-width: 480px), (max-width: 480px) {
       display: none;
@@ -172,8 +175,6 @@
   }
 
   &__smartphone-icon {
-    fill: #757575;
-
     @include animate(color);
     @media screen and (min-width: 480px), (max-width: 480px) {
       display: none;
@@ -198,27 +199,17 @@
     display: flex;
     text-decoration: none;
     align-items: center;
-
-    @include animate(color);
   }
 
   &__email:hover,
   &__email:focus {
     color: $accentColor;
-  }
-
-  &__email:hover .auth-nav__envelope-icon,
-  &__email:focus .auth-nav__envelope-icon {
     fill: currentColor;
   }
 
   &__phone:hover,
   &__phone:focus {
     color: $accentColor;
-  }
-
-  &__phone:hover &__smartphone-icon,
-  &__phone:focus &__smartphone-icon {
     fill: currentColor;
   }
 

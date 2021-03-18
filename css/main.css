@@ -269,6 +269,10 @@ body.modal-open {
   }
 }
 
+.auth-nav__item {
+  fill: #757575;
+}
+
 @media screen and (min-width: 768px) {
   .auth-nav__item:first-child {
     margin-bottom: 10px;
@@ -282,7 +286,6 @@ body.modal-open {
 }
 
 .auth-nav__envelope-icon {
-  fill: #757575;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -315,7 +318,6 @@ body.modal-open {
 }
 
 .auth-nav__smartphone-icon {
-  fill: #757575;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -355,29 +357,15 @@ body.modal-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav__email:hover, .auth-nav__email:focus {
   color: #2196f3;
-}
-
-.auth-nav__email:hover .auth-nav__envelope-icon,
-.auth-nav__email:focus .auth-nav__envelope-icon {
   fill: currentColor;
 }
 
 .auth-nav__phone:hover, .auth-nav__phone:focus {
   color: #2196f3;
-}
-
-.auth-nav__phone:hover .auth-nav__smartphone-icon,
-.auth-nav__phone:focus .auth-nav__smartphone-icon {
   fill: currentColor;
 }
 
@@ -1438,7 +1426,6 @@ textarea {
 }
 
 .media-box__insta-icon, .media-box__twit-icon, .media-box__facebook-icon, .media-box__linkd-icon {
-  fill: #afb1b8;
   width: 20px;
   height: 20px;
 }
@@ -1455,6 +1442,7 @@ textarea {
           justify-content: center;
   width: 44px;
   height: 44px;
+  fill: #afb1b8;
   border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -1469,28 +1457,8 @@ textarea {
 }
 
 .media-box__link:hover, .media-box__link:focus {
-  color: #ffffff;
+  fill: #ffffff;
   background-color: #2196f3;
-}
-
-.media-box__insta-icon, .media-box__twit-icon, .media-box__linkd-icon, .media-box__facebook-icon {
-  -webkit-transition-property: fill;
-  transition-property: fill;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.media-box__link:hover .media-box__twit-icon,
-.media-box__link:focus .media-box__twit-icon,
-.media-box__link:hover .media-box__insta-icon,
-.media-box__link:focus .media-box__insta-icon,
-.media-box__link:hover .media-box__facebook-icon,
-.media-box__link:focus .media-box__facebook-icon,
-.media-box__link:hover .media-box__linkd-icon,
-.media-box__link:focus .media-box__linkd-icon {
-  fill: currentColor;
 }
 
 .ourclients {
@@ -1524,6 +1492,7 @@ textarea {
 
 .ourclients__link {
   height: 90px;
+  fill: #afb1b8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1586,36 +1555,8 @@ textarea {
   }
 }
 
-.ourclients__logo1, .ourclients__logo2, .ourclients__logo3, .ourclients__logo4, .ourclients__logo5, .ourclients__logo6 {
-  fill: #afb1b8;
-  -webkit-transition-property: fill;
-  transition-property: fill;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .ourclients__link:hover, .ourclients__link:focus {
   border: 1px solid #2196f3;
-}
-
-.ourclients__link:hover .ourclients__logo1,
-.ourclients__link:focus .ourclients__logo1,
-.ourclients__link:hover .ourclients__logo2,
-.ourclients__link:focus .ourclients__logo2,
-.ourclients__link:hover .ourclients__logo3,
-.ourclients__link:focus .ourclients__logo3,
-.ourclients__link:hover .ourclients__logo4,
-.ourclients__link:focus .ourclients__logo4,
-.ourclients__link:hover .ourclients__logo5,
-.ourclients__link:focus .ourclients__logo5,
-.ourclients__link:hover .ourclients__logo6,
-.ourclients__link:focus .ourclients__logo6 {
-  fill: #2196f3;
-}
-
-.ourclients__logo1:hover, .ourclients__logo2:hover, .ourclients__logo3:hover, .ourclients__logo4:hover, .ourclients__logo5:hover, .ourclients__logo6:hover, .ourclients__logo1:focus, .ourclients__logo2:focus, .ourclients__logo3:focus, .ourclients__logo4:focus, .ourclients__logo5:focus, .ourclients__logo6:focus {
   fill: #2196f3;
 }
 
