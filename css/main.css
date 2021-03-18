@@ -481,6 +481,20 @@ body.modal-open {
   color: #2196f3;
 }
 
+.mobile-sitenav__link--current:hover, .mobile-sitenav__link--current:focus {
+  color: #2196f3;
+}
+
+.mobile-sitenav__link--current {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: #2196f3;
+}
+
 .mobile-authnav__smartphone-icon,
 .mobile-authnav__envelope-icon {
   display: none;

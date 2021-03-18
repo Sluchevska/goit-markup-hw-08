@@ -68,6 +68,16 @@
   &:focus {
     color: $accentColor;
   }
+
+  &--current:hover,
+  &--current:focus {
+    color: $accentColor;
+  }
+
+  &--current {
+    @include animate(color);
+    color: $accentColor;
+  }
 }
 
 .mobile-authnav__smartphone-icon,
