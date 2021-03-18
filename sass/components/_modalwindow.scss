@@ -66,9 +66,6 @@
     overflow-y: scroll;
   }
 
-  @media screen and (min-width: $desktop) {
-  }
-
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -263,6 +260,17 @@ textarea {
 .input-border:hover ~ .form-icons,
 .input-border:focus ~ .form-icons {
   fill: $accentColor;
+}
+
+.form-field:hover .form-field__user-info,
+.form-field:focus .form-field__user-info {
+  color: $accentColor;
+}
+
+.input-border:hover,
+.input-border:focus {
+  border-color: $accentColor;
+  outline: none;
 }
 
 .customer-agreem {

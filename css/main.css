@@ -416,11 +416,13 @@ body.modal-open {
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
   z-index: 7;
+  opacity: 0;
 }
 
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  opacity: 1;
 }
 
 .menu-toggle {
@@ -1008,6 +1010,16 @@ textarea {
 .input-border:hover ~ .form-icons,
 .input-border:focus ~ .form-icons {
   fill: #2196f3;
+}
+
+.form-field:hover .form-field__user-info,
+.form-field:focus .form-field__user-info {
+  color: #2196f3;
+}
+
+.input-border:hover, .input-border:focus {
+  border-color: #2196f3;
+  outline: none;
 }
 
 .customer-agreem {
