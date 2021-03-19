@@ -1000,9 +1000,11 @@ textarea {
   fill: #2196f3;
 }
 
-.form-field:hover .form-field__user-info,
-.form-field:focus .form-field__user-info {
-  color: #2196f3;
+@media screen and (max-width: 767px) {
+  .form-field:hover .form-field__user-info,
+  .form-field:focus .form-field__user-info {
+    color: #2196f3;
+  }
 }
 
 .input-border:hover, .input-border:focus {

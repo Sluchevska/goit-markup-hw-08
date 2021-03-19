@@ -262,7 +262,9 @@ textarea {
 
 .form-field:hover .form-field__user-info,
 .form-field:focus .form-field__user-info {
-  color: $accentColor;
+  @media screen and(max-width: 767px) {
+    color: $accentColor;
+  }
 }
 
 .input-border:hover,
