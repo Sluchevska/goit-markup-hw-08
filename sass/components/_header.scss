@@ -12,6 +12,10 @@
   @media screen and (min-width: $tablet) {
     padding-top: 0;
     padding-bottom: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media screen and( min-width:$desktop) {
     align-items: baseline;
   }
 
@@ -45,7 +49,7 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: 88px;
+    // margin-left: 88px;
   }
   @media screen and (min-width: $desktop) {
     margin-left: 93px;
@@ -140,11 +144,12 @@
     // margin-top: -12px;
     flex-direction: inherit;
     display: block;
-    margin-left: auto;
+    // margin-left: auto;
   }
   @media screen and (min-width: $desktop) {
     display: flex;
-    margin-top: 0;
+    // margin-top: 0;
+    margin-left: auto;
   }
 
   &__item {
