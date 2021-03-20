@@ -465,6 +465,10 @@ body.modal-open {
   margin-bottom: 32px;
 }
 
+.mobile-sitenav__item:last-child {
+  margin-bottom: 0;
+}
+
 .mobile-sitenav__link {
   text-decoration: none;
   color: #212121;
@@ -501,7 +505,6 @@ body.modal-open {
   letter-spacing: 0.02em;
   color: #2196f3;
   text-decoration: none;
-  margin-top: 302px;
 }
 
 .mobile-authnav__email {
@@ -512,7 +515,6 @@ body.modal-open {
   letter-spacing: 0.02em;
   color: #757575;
   margin-top: 32px;
-  margin-bottom: 64px;
   text-decoration: none;
 }
 
@@ -567,6 +569,20 @@ body.modal-open {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobilemenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
 }
 
 .hero {
@@ -1635,15 +1651,15 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .footer {
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     text-align: left;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1702,7 +1718,6 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .join-us-box {
-    margin-left: 70px;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -1735,24 +1750,6 @@ textarea {
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 480px), (max-width: 480px) {
-  .sign-in-box {
-    margin-left: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .sign-in-box {
-    margin-left: auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .sign-in-box {
-    margin-left: 93px;
-  }
 }
 
 @media screen and (min-width: 768px) {

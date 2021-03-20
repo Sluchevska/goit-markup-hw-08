@@ -60,6 +60,10 @@
   letter-spacing: 0.02em;
   text-align: left;
   margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .mobile-sitenav__link {
@@ -97,7 +101,7 @@
 
   color: #2196f3;
   text-decoration: none;
-  margin-top: 302px;
+  // margin-top: 302px;
 }
 
 .mobile-authnav__email {
@@ -109,7 +113,7 @@
 
   color: #757575;
   margin-top: 32px;
-  margin-bottom: 64px;
+  // margin-bottom: 64px;
   text-decoration: none;
 }
 
@@ -159,4 +163,11 @@
 .menu-toggle:focus .icon-close24 {
   fill: $accentColor;
   @include animate(fill);
+}
+
+.mobilemenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
