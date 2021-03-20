@@ -98,18 +98,11 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .main-nav {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 0;
+    padding-bottom: 0;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .main-nav {
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
 }
 
@@ -166,6 +159,8 @@ body.modal-open {
   display: block;
   text-decoration: none;
   color: #212121;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav__link--current:hover, .site-nav__link--current:focus {
@@ -193,13 +188,13 @@ body.modal-open {
     border-radius: 2px;
     opacity: 1;
     position: absolute;
-    margin-top: 48px;
+    bottom: -1px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .site-nav__link--current::after {
-    margin-top: 37px;
+    bottom: 0;
   }
 }
 
@@ -250,7 +245,6 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .auth-nav {
-    margin-top: -12px;
     -webkit-box-orient: inherit;
     -webkit-box-direction: inherit;
         -ms-flex-direction: inherit;
