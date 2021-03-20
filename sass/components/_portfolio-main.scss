@@ -1,5 +1,3 @@
-// @import "../utils/mixins";
-
 .projects {
   padding-inline-start: 0;
 
@@ -10,6 +8,7 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   @media screen and (min-width: $desktop) {
@@ -24,23 +23,16 @@
     }
 
     @media screen and (min-width: $tablet) {
+      display: flex;
       flex-basis: calc((100% - 30px) / 2);
     }
 
     @media screen and (min-width: $desktop) {
-      margin-left: 30px;
+      display: block;
+
       margin-top: 30px;
       flex-basis: calc(100% / 3 - 30px);
       margin-bottom: 0;
-    }
-  }
-
-  &__item:nth-child(2n + 1) {
-    @media screen and (min-width: $tablet) {
-      margin-right: 30px;
-    }
-    @media screen and (min-width: $desktop) {
-      margin-right: 0;
     }
   }
 
@@ -53,15 +45,12 @@
   &__thumb {
     position: relative;
     overflow: hidden;
-    height: 294px;
   }
 
   &-overlay {
     position: absolute;
     top: 0;
     right: 0;
-
-    // @media screen and (min-width: $mobile), (max-width: $mobile) {
     width: 100%;
     height: 100%;
     background-color: rgba(33, 150, 243, 0.9);
@@ -97,6 +86,11 @@
     outline: none;
 
     @include animate(box-shadow);
+
+    @media screen and (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__link:hover,
@@ -106,23 +100,10 @@
 }
 
 .project-box {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 24px;
-  padding-left: 24px;
-
-  display: block;
-
+  padding: 20px 24px;
+  flex-grow: 1;
   border: 1px solid #eeeeee;
-
-  &-tehno {
-    @media screen and (min-width: $tablet) {
-      padding-bottom: 54px;
-    }
-    @media screen and (min-width: $desktop) {
-      padding-bottom: 20px;
-    }
-  }
+  border-top: none;
 
   &__title {
     color: $primaryColor;
