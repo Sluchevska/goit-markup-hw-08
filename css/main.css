@@ -1885,7 +1885,6 @@ textarea {
 
 .join-us__link:hover, .join-us__link:active, .join-us__link:focus {
   background-color: #2196f3;
-  border: 1px solid #2196f3;
 }
 
 .join-us__media + .join-us__media {

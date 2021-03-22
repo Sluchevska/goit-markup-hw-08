@@ -193,7 +193,6 @@
   &__link:active,
   &__link:focus {
     background-color: $accentColor;
-    border: 1px solid $accentColor;
   }
 
   &__media + &__media {
