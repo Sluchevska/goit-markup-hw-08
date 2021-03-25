@@ -6,7 +6,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   padding: 48px 40px;
   background-color: white;
@@ -122,6 +122,7 @@
 
 .mobile-social {
   display: flex;
+  flex-wrap: wrap;
 
   &__link {
     text-decoration: none;
@@ -131,15 +132,15 @@
     letter-spacing: 0.02em;
 
     color: #2196f3;
-    margin-left: 10px;
+    // margin-left: 10px;
   }
 
   &__item {
-    margin-left: 10px;
+    margin-right: 20px;
   }
 
-  &__item:first-child {
-    margin-left: -10px;
+  &__item:last-child {
+    margin-right: -20px;
   }
 
   &__item::after {
