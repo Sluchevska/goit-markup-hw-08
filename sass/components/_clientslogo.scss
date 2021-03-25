@@ -31,17 +31,17 @@
     outline: none;
 
     @include animate(border);
-    @media screen and (min-width: $mobile), (max-width: $mobile) {
-      width: 210px;
-    }
+    // @media screen and (min-width: $mobile), (max-width: $mobile) {
+    //   width: 210px;
+    // }
 
-    @media screen and (min-width: $tablet) {
-      width: 226px;
-    }
+    // @media screen and (min-width: $tablet) {
+    //   width: 226px;
+    // }
 
-    @media screen and (min-width: $desktop) {
-      width: 170px;
-    }
+    // @media screen and (min-width: $desktop) {
+    //   width: 170px;
+    // }
   }
 
   &__item {

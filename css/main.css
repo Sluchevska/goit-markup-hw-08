@@ -402,7 +402,7 @@ body.modal-open {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100vh;
   height: 100vh;
   padding: 48px 40px;
   background-color: white;
@@ -676,13 +676,11 @@ body.modal-open {
   .hero__text {
     font-size: 26px;
     line-height: 1.615;
-    width: 360px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero__text {
-    width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -1154,14 +1152,12 @@ textarea {
 
 @media screen and (min-width: 480px), (max-width: 480px) {
   .advantages__item {
-    width: 450px;
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .advantages__item {
-    width: 354px;
     margin-right: 30px;
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
@@ -1170,7 +1166,6 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .advantages__item {
-    width: 270px;
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
     margin-bottom: 0;
@@ -1541,24 +1536,6 @@ textarea {
 }
 
 @media screen and (min-width: 480px), (max-width: 480px) {
-  .ourclients__link {
-    width: 210px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .ourclients__link {
-    width: 226px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .ourclients__link {
-    width: 170px;
-  }
-}
-
-@media screen and (min-width: 480px), (max-width: 480px) {
   .ourclients__item {
     margin-right: 30px;
     margin-top: 30px;
@@ -1838,7 +1815,7 @@ textarea {
 
 @media screen and (min-width: 480px), (max-width: 480px) {
   .sign-in__form {
-    min-width: 358px;
+    min-width: 100%;
   }
 }
 
