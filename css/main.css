@@ -36,15 +36,9 @@ ul {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
-}
-
-@media screen and (min-width: 1200px) {
-  img {
-    width: 370px;
-  }
 }
 
 .container {
