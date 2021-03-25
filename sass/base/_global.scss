@@ -1,5 +1,4 @@
 body {
-  min-width: 320px;
   color: $primaryColor;
   font-family: Roboto, sans-serif;
 
@@ -39,7 +38,4 @@ img {
   height: auto;
 
   display: block;
-  @media screen and (min-width: $desktop) {
-    // width: 370px;
-  }
 }

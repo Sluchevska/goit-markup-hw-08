@@ -49,7 +49,6 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    // margin-left: 88px;
   }
   @media screen and (min-width: $desktop) {
     margin-left: 93px;
@@ -61,16 +60,6 @@
     color: $primaryColor;
     padding-top: 32px;
     padding-bottom: 32px;
-
-    @media screen and (min-width: $tablet) {
-      // padding-top: 26px;
-      // padding-bottom: 26px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      // padding-top: 32px;
-      // padding-bottom: 32px;
-    }
   }
 
   &__link--current:hover,
@@ -97,10 +86,8 @@
       opacity: 1;
       position: absolute;
       bottom: -1px;
-      // margin-top: 48px;
     }
     @media screen and( min-width:$desktop) {
-      // margin-top: 37px;
       bottom: 0;
     }
   }
@@ -141,14 +128,12 @@
     display: none;
   }
   @media screen and (min-width: $tablet) {
-    // margin-top: -12px;
     flex-direction: inherit;
     display: block;
-    // margin-left: auto;
   }
   @media screen and (min-width: $desktop) {
     display: flex;
-    // margin-top: 0;
+
     margin-left: auto;
   }
 
