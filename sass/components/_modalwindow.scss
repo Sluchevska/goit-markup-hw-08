@@ -161,6 +161,7 @@
   appearance: none;
   -webkit-appearance: none;
   outline-offset: 0;
+  outline: none;
 }
 
 .check-icon {
@@ -192,8 +193,9 @@
   }
 }
 
-.check-agreem {
-  margin-right: 4px;
+.checkbox:focus {
+  border: 1px solid $accentColor;
+  border-radius: 2px;
 }
 
 textarea {
@@ -275,4 +277,5 @@ textarea {
 
 .customer-agreem {
   color: $accentColor;
+  margin-left: 4px;
 }

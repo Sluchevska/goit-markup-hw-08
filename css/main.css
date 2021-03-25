@@ -898,6 +898,7 @@ body.modal-open {
        appearance: none;
   -webkit-appearance: none;
   outline-offset: 0;
+  outline: none;
 }
 
 .check-icon {
@@ -932,8 +933,9 @@ body.modal-open {
   }
 }
 
-.check-agreem {
-  margin-right: 4px;
+.checkbox:focus {
+  border: 1px solid #2196f3;
+  border-radius: 2px;
 }
 
 textarea {
@@ -1032,6 +1034,7 @@ textarea {
 
 .customer-agreem {
   color: #2196f3;
+  margin-left: 4px;
 }
 
 .advantages {
